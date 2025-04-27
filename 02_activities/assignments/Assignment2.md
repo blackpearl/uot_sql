@@ -54,7 +54,10 @@ The store wants to keep customer addresses. Propose two architectures for the CU
 **HINT:** search type 1 vs type 2 slowly changing dimensions. 
 
 ```
-Your answer...
+Type-1 Architecture:
+Customer Address is maintained within the primary customer table. In this type, a customer address history cannot be stored.
+Type-2 Architecture:
+Customer address history can be maintained. We can keep a seperate table with Address start date, end date and link it with customer table with a foreign key.
 ```
 
 ***
